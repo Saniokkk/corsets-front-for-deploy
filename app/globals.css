@@ -1,0 +1,114 @@
+:root {
+  --primary: #161313;
+  --accent-color:  #FD6129;
+  --title-color: #221f1f;
+  --main-bg: #fffaf4;
+  --secondary-bg:#F8F2EB;
+  --white: #e9e9e9;
+  --input-border-color: #E4E4E4;
+  --active-btn-color: #393939;
+  --form-fail-border: 1px solid #D54747;
+  --form-fail-bg: #FFE8E8;
+  --scroll-bar-br: 8px;
+  --scroll-bar-border: 2px solid #989898;
+  --scroll-bar-bg: #F4F4F4;
+  --scroll-bar-track-bg: #BBBBBB;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--primary);
+  font-weight: 400;
+  background: var(--main-bg);
+  height: 2000px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  --webkit-text-fill-color: #ссс;
+  --webkit-box-shadow: 0 0 0px 1000px #cecece inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background: linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 174, 255, 0.04) 50%,
+    rgba(255, 255, 255, 0) 51%,
+    rgba(0, 174, 255, 0.03) 100%
+  );
+}
+
+/* Webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 11px;
+  border: var(--scroll-bar-border);
+  /* padding: 1px; */
+  /* border: var(--scroll-bar-border); */
+  border-radius: var(--scroll-bar-br);
+}
+
+::-webkit-scrollbar-thumb {
+  /* width: 7px; */
+  /* margin: 2px 2px; */
+  /* border: 2px solid #989898; */
+  border-radius: var(--scroll-bar-br);
+  background-color: var(--scroll-bar-track-bg);
+}
+
+::-webkit-scrollbar-track {
+  /* width: 7px; */
+  /* margin: 2px 0; */
+  background-color: var(--scroll-bar-bg);
+  /* box-shadow: inset 0 0 5px grey; */
+  /* border: var(--scroll-bar-border); */
+  border-radius: var(--scroll-bar-br);
+}
+
+/* ::-webkit-scrollbar-thumb:vertical {
+  margin: 2px 0; Проміжок вгору і внизу внутрішньої частини
+} */
+
+/* Firefox */
+/* Деякі стилізації Firefox можуть вимагати використання вендорних префіксів */
+/* scrollbar-color: #4CAF50 #f1f1f1;
+scrollbar-width: 12px; */

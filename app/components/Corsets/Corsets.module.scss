@@ -1,0 +1,30 @@
+.new {
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 120px;
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+}
+
+.container {
+ 
+  padding: 0 16px !important;
+}
+
+.wrapperButton {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}

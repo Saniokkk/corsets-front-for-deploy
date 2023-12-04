@@ -1,0 +1,10 @@
+export { Header } from './Layout/Header/Header';
+export { Footer } from './Layout/Footer/Footer';
+export { Hero } from './Hero/Hero';
+export { About } from './About/About';
+export { New } from './New/New';
+export { Corsets } from './Corsets/Corsets';
+export { Dresses } from './Dresses/Dresses';
+export { Terms } from './Terms/Terms';
+export { Note } from './Note/Note';
+export { Order } from './Order/Order';

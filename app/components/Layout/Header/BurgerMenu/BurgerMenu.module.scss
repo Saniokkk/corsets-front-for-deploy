@@ -1,0 +1,50 @@
+.burger {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &_button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--main-bg);
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 142px;
+
+  text-align: center;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.close {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
