@@ -1,0 +1,14 @@
+.list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    list-style: none;
+    display: flex;
+    padding-bottom: 8px;
+  }
+}
+
+.item:not(:last-child) {
+  margin-right: 32px;
+}/*# sourceMappingURL=Navigation.module.css.map */

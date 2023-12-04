@@ -1,0 +1,83 @@
+.xs {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.37;
+}
+@media screen and (min-width: 768px) {
+  .xs {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.xsbold {
+  font-size: 16px;
+  font-weight: 540;
+  line-height: 1.37;
+}
+@media screen and (min-width: 1280px) {
+  .xsbold {
+    font-size: 20px;
+    font-weight: 540;
+    line-height: 1.35;
+  }
+}
+
+.s {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33;
+}
+@media screen and (min-width: 768px) {
+  .s {
+    font-size: 16px;
+    line-height: 1.37;
+  }
+}
+
+.sbold {
+  font-size: 18px;
+  font-weight: 540;
+  line-height: 1.33;
+}
+@media screen and (min-width: 768px) {
+  .sbold {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.37;
+  }
+}
+
+.nav {
+  font-size: 18px;
+  font-weight: 540;
+  line-height: 1.33;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav:hover, .nav:focus {
+  font-weight: 700;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.37;
+  }
+  .nav:hover, .nav:focus {
+    font-weight: 540px;
+  }
+}
+
+.card {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.37;
+}
+
+.number {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.37;
+  text-transform: uppercase;
+}/*# sourceMappingURL=Text.module.css.map */

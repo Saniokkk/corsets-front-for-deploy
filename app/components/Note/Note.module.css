@@ -1,0 +1,81 @@
+.note {
+  margin-top: 60px;
+  padding: 32px 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../../public/note-s.webp");
+}
+@media screen and (min-width: 768px) {
+  .note {
+    margin-top: 80px;
+    padding: 47px 0;
+    background-image: url("../../../public/note-m.webp");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .note {
+    margin-top: 120px;
+    padding: 81px 0 102px 0;
+    background-position-x: -378px;
+    background-image: url("../../../public/note-l.webp");
+  }
+}
+
+.title {
+  position: relative;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    margin-bottom: 40px;
+  }
+}
+.title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  right: 22px;
+  width: 300px;
+  height: 1px;
+  background-color: var(--title-color);
+}
+@media screen and (min-width: 768px) {
+  .title::after {
+    width: 475px;
+    right: 106px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .title::after {
+    width: 475px;
+    right: 360px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  list-style: disc;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    padding: 0 99px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .list {
+    padding: 0 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .enter {
+    display: none;
+  }
+}/*# sourceMappingURL=Note.module.css.map */

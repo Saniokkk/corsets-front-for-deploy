@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  width: 340px;
+  height: 191px;
+}
+@media screen and (min-width: 768px) {
+  .video {
+    width: 616px;
+    height: 333px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .video {
+    width: 865px;
+    height: 469px;
+  }
+}/*# sourceMappingURL=Video.module.css.map */
